@@ -1,16 +1,25 @@
-# providerdemo
-
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Illustrating provider in less ui way.
 
-A few resources to get you started if this is your first Flutter project:
+# Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Whole stateless app with state change can be achieved by using <b>InheritedWidgets, ChangeNotifiers</b> without using provider instead using custom Listenable. In small scale it's good.
+But time consuming at medium or large scale.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The applet shows the use of <b>read\<T\>()</b> method which gets the value of T from nearest or specified provider
+
+- lib
+  - main.dart
+
+# Dependencies
+
+- provider
+- uuid
+
+# Key Points
+
+- Uuid to override the equality operator
+- ChangeNotifier
+
+
